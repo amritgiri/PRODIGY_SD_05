@@ -32,7 +32,7 @@ def get_rating(soup):
     return rating
 
 URL = 'https://www.amazon.com/s?k=headphones&crid=7VISOETH51V&sprefix=headphone%2Caps%2C499&ref=nb_sb_noss_2'
-HEADERS = ({'User-Agent':'Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0', 'Accept-Language': 'en-US, en;q=0.5'})
+HEADERS = ({'User-Agent':'', 'Accept-Language': 'en-US, en;q=0.5'})
 
 page = requests.get(URL, headers= HEADERS)
 print(page)
